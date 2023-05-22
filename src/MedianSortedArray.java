@@ -7,27 +7,46 @@ return the median of the two sorted arrays.
 
 The overall run time complexity should be O(log (m+n)).
 
-Example 1:
-
-Input: nums1 = [1,3], nums2 = [2]
-Output: 2.00000
-Explanation: merged array = [1,2,3] and median is 2.
-Example 2:
-
-Input: nums1 = [1,2], nums2 = [3,4]
-Output: 2.50000
-Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
-
  */
 public class MedianSortedArray {
     public static double findMedianSortedArrays(int [] nums1, int [] nums2){
         int [] mergedArray = new int[nums1.length + nums2.length];
-        for (int i = 0; i < mergedArray.length; i++){
 
+        int j = 0, k = 0, i = 0;
+        while(j < nums1.length && k < nums2.length){
+            if(nums1[j] < nums2[k]){
+                mergedArray[i] = nums1[j];
+                j++;
+            } else {
+                mergedArray[i] = nums2[k];
+                k++;
+            }
+            i++;
         }
-        return 1.0;
+
+        if (j < nums1.length){
+            for (int l = j; l < nums1.length; l++) {
+                mergedArray[i] = nums1[j];
+                i++;
+            }
+        } else if (k < nums2.length){
+            for (int l = k; l < nums2.length; l++) {
+                mergedArray[i] = nums2[k];
+                i++;
+            }
+        }
+
+        int midVal = mergedArray[Math.round(mergedArray.length/2)];
+        if (mergedArray.length%2==0){
+            return (midVal + mergedArray[Math.round(mergedArray.length/2)-1])/2.0;
+        } else {
+            return midVal;
+        }
     }
     public static void main(String[] args) {
-        System.out.println("Helm l|o world!");
+        int [] nums1 = {1,3};
+        int [] nums2 = {2,4};
+
+        System.out.println(findMedianSortedArrays(nums1, nums2));
     }
 }

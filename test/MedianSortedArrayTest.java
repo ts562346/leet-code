@@ -1,4 +1,7 @@
 import org.junit.jupiter.api.Test;
+
+import javax.print.attribute.standard.Media;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MedianSortedArrayTest {
@@ -20,7 +23,8 @@ class MedianSortedArrayTest {
         int [] nums1 = {1,3};
         int [] nums2 = {2};
 
-        assertEquals(2.0, MedianSortedArray.findMedianSortedArrays(nums1,nums2));
+        MedianSortedArray test = new MedianSortedArray();
+        assertEquals(2.0, test.findMedianSortedArrays(nums1,nums2));
     }
 
     @Test
@@ -28,7 +32,8 @@ class MedianSortedArrayTest {
         int [] nums1 = {1,3};
         int [] nums2 = {2,4};
 
-        assertEquals(2.5, MedianSortedArray.findMedianSortedArrays(nums1,nums2));
+        MedianSortedArray test = new MedianSortedArray();
+        assertEquals(2.5, test.findMedianSortedArrays(nums1,nums2));
     }
 
 

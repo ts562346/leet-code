@@ -24,7 +24,8 @@ public class TwoSumTest {
         int [] nums = {2,7,11,15};
         int target = 9;
 
-        assertArrayEquals(new int[]{0, 1}, TwoSum.twoSum(nums, target));
+        TwoSum test = new TwoSum();
+        assertArrayEquals(new int[]{0, 1}, test.twoSum(nums, target));
     }
 
     @Test
@@ -32,7 +33,8 @@ public class TwoSumTest {
         int [] nums = {3,2,4};
         int target = 6;
 
-        assertArrayEquals(new int[]{1,2}, TwoSum.twoSum(nums, target));
+        TwoSum test = new TwoSum();
+        assertArrayEquals(new int[]{1,2}, test.twoSum(nums, target));
     }
 
     @Test
@@ -40,6 +42,7 @@ public class TwoSumTest {
         int [] nums = {3,3};
         int target = 6;
 
-        assertArrayEquals(new int[]{0, 1}, TwoSum.twoSum(nums, target));
+        TwoSum test = new TwoSum();
+        assertArrayEquals(new int[]{0, 1}, test.twoSum(nums, target));
     }
 }

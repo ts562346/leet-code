@@ -9,7 +9,7 @@ The overall run time complexity should be O(log (m+n)).
 
  */
 public class MedianSortedArray {
-    public static double findMedianSortedArrays(int [] nums1, int [] nums2){
+    public double findMedianSortedArrays(int [] nums1, int [] nums2){
         int [] mergedArray = new int[nums1.length + nums2.length];
 
         int j = 0, k = 0, i = 0;
@@ -42,11 +42,5 @@ public class MedianSortedArray {
         } else {
             return midVal;
         }
-    }
-    public static void main(String[] args) {
-        int [] nums1 = {1,3};
-        int [] nums2 = {2,4};
-
-        System.out.println(findMedianSortedArrays(nums1, nums2));
     }
 }

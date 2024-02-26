@@ -11,7 +11,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
  */
 
 public class AddTwoNumbers {
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode sum = new ListNode();
         ListNode head = sum;
         int carry = 0;
@@ -53,25 +53,5 @@ public class AddTwoNumbers {
             sum.next = new ListNode(carry);
 
         return head.next;
-    }
-
-    public static void main (String [] main){
-        ListNode l1 = new ListNode(9);
-        l1.next = new ListNode(9);
-        l1.next.next = new ListNode(9);
-        l1.next.next.next = new ListNode(9);
-        l1.next.next.next.next = new ListNode(9);
-        l1.next.next.next.next.next = new ListNode(9);
-        l1.next.next.next.next.next.next  = new ListNode(9);
-        ListNode l2 = new ListNode(9);
-        l2.next = new ListNode(9);
-        l2.next.next = new ListNode(9);
-        l2.next.next.next = new ListNode(9);
-
-        ListNode currentNode = addTwoNumbers(l1, l2);
-        while(currentNode != null) {
-            System.out.println(currentNode.val);
-            currentNode = currentNode.next;
-        }
     }
 }

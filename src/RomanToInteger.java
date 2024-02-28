@@ -30,6 +30,35 @@ Given a roman numeral, convert it to an integer.
 
 public class RomanToInteger {
     public int romanToInt(String s) {
-        return 0;
+        int total = 0;
+        for (int i = 0; i < s.length(); i++){
+            int val = getSymbolValue(s.charAt(i));
+            if (i+1 < s.length()){
+
+                int nextVal = getSymbolValue(s.charAt(i+1));
+
+                if (nextVal > val){
+                    total -= val;
+                } else {
+                    total += val;
+                }
+            } else {
+                total += val;
+            }
+        }
+        return total;
+    }
+
+    public int getSymbolValue(char symbol) {
+        return switch (symbol) {
+            case 'I' -> 1;
+            case 'V' -> 5;
+            case 'X' -> 10;
+            case 'L' -> 50;
+            case 'C' -> 100;
+            case 'D' -> 500;
+            case 'M' -> 1000;
+            default -> -1;
+        };
     }
 }

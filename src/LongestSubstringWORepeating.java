@@ -8,7 +8,7 @@ without repeating characters.
  */
 
 public class LongestSubstringWORepeating {
-    public static int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring(String s) {
         int n = s.length();
         int res = 0;
 
@@ -26,10 +26,5 @@ public class LongestSubstringWORepeating {
             visited[s.charAt(i)] = false;
         }
         return res;
-    }
-
-    public static void main(String[] args) {
-        String s = "pwwkew";
-        System.out.println(lengthOfLongestSubstring(s));
     }
 }

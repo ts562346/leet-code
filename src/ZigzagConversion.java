@@ -15,7 +15,7 @@ Write the code that will take a string and make this conversion given a number o
  */
 
 public class ZigzagConversion {
-    public static String convert(String s, int numRows) {
+    public String convert(String s, int numRows) {
 
         int cycle = numRows + numRows - 2;
         int partial_cycle_chars = s.length() % cycle;
@@ -34,7 +34,4 @@ public class ZigzagConversion {
         return s;
     }
 
-    public static void main (String [] agrs){
-        convert("PAYPALISHIRING", 3);
-    }
 }

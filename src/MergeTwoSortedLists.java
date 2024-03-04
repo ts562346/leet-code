@@ -1,7 +1,3 @@
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 /*
 
 21. Merge Two Sorted Lists - easy
@@ -16,18 +12,18 @@ Return the head of the merged linked list.
  */
 public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode head = new ListNode(); // Dummy node to simplify logic
-        ListNode merged = head; // Start with the dummy node
+        ListNode head = new ListNode();
+        ListNode merged = head;
 
         while (list1 != null && list2 != null) {
             if (list1.val < list2.val) {
-                merged.next = list1; // Attach smaller node
-                list1 = list1.next; // Move list1 pointer
+                merged.next = list1;
+                list1 = list1.next;
             } else {
-                merged.next = list2; // Attach smaller node
-                list2 = list2.next; // Move list2 pointer
+                merged.next = list2;
+                list2 = list2.next;
             }
-            merged = merged.next; // Move merged pointer
+            merged = merged.next;
         }
 
         // Attach remaining nodes from either list1 or list2
@@ -35,8 +31,7 @@ public class MergeTwoSortedLists {
             merged.next = list1;
         else
             merged.next = list2;
-//        merged.next = (list1 != null) ? list1 : list2;
 
-        return head.next; // Skip the dummy node
+        return head.next;
     }
 }

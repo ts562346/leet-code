@@ -3,7 +3,7 @@
 3. Longest Substring Without Repeating Characters - Medium
 4. Median of Two Sorted Arrays - Hard
 5. Longest Palindromic Substring - Medium
-6. ZigZag Conversion - Medium
+6. ZigZag Conversion - Medium (incomplete)
 
 9. Palindrome Number - Easy
 
@@ -11,7 +11,8 @@
 14. Longest Common Prefix - Easy
 
 20. Valid Parentheses - Easy
-21. Merge Two Sorted Lists - easy
+21. Merge Two Sorted Lists - Easy
 
 26. Remove Duplicates from Sorted Array - Easy
 27. Remove Element - Easy
+28. Find the Index of the First Occurrence in a String - Easy

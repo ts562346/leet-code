@@ -15,6 +15,7 @@ Note: Assume we are dealing with an environment that could only store integers
 within the 32-bit signed integer range: [−2^31, 231 − 1]. For this problem, if
 the quotient is strictly greater than 2^31 - 1, then return 2^31 - 1, and if
 the quotient is strictly less than -2^31, then return -2^31.
+
  */
 public class DivideTwoIntegers {
     public int divide(int dividend, int divisor) {
@@ -22,21 +23,37 @@ public class DivideTwoIntegers {
         boolean negDividend = false;
         boolean negDivisor = false;
 
+        if (dividend == Integer.MIN_VALUE && divisor == 1) {
+            return Integer.MIN_VALUE;
+        } else if (dividend == Integer.MAX_VALUE && divisor == 1) {
+            return Integer.MAX_VALUE;
+        } else if (dividend == Integer.MIN_VALUE && divisor == -1){
+            return Integer.MAX_VALUE;
+        } else if (dividend == Integer.MAX_VALUE && divisor == -1){
+            return Integer.MIN_VALUE+1;
+        }
+
+        if(divisor == 1 || divisor == -1){
+            return dividend*divisor;
+        }
+
         if(dividend < 0){
-            dividend = -dividend;
             negDividend = true;
         }
+
         if(divisor < 0){
-            divisor = -divisor;
             negDivisor = true;
         }
 
-        if (dividend == Integer.MAX_VALUE+1 && divisor == 1) {
-            // Handle overflow case where quotient is less than -2^31
-            i = Integer.MAX_VALUE+1;
+        long dvd = Math.abs((long) dividend);
+        long dvs = Math.abs((long) divisor);
+
+        if(dvd<dvs){
+            return 0;
         }
-        while(dividend>divisor || dividend==divisor){
-            dividend-=divisor;
+
+        while(dvd>dvs || dvd==dvs){
+            dvd-=dvs;
             i++;
         }
 

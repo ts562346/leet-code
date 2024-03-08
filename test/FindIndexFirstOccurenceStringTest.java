@@ -18,7 +18,6 @@ public class FindIndexFirstOccurenceStringTest {
         FindIndexFirstOccurrenceString test = new FindIndexFirstOccurrenceString();
         assert 0 == test.strStr(haystack, needle);
     }
-
     /*
          Example 2:
 
@@ -32,7 +31,6 @@ public class FindIndexFirstOccurenceStringTest {
         FindIndexFirstOccurrenceString test = new FindIndexFirstOccurrenceString();
         assert -1 == test.strStr(haystack, needle);
     }
-
     /*
          Example 3:
 
@@ -46,7 +44,6 @@ public class FindIndexFirstOccurenceStringTest {
         FindIndexFirstOccurrenceString test = new FindIndexFirstOccurrenceString();
         assert 2 == test.strStr(haystack, needle);
     }
-
     /*
          Example 4:
 
@@ -60,7 +57,6 @@ public class FindIndexFirstOccurenceStringTest {
         FindIndexFirstOccurrenceString test = new FindIndexFirstOccurrenceString();
         assert 0 == test.strStr(haystack, needle);
     }
-
     /*
          Example 5:
 

@@ -27,7 +27,6 @@ public class RemoveElementTest {
             assert nums[i] == expectedNums[i];
         }
     }
-
     /*
         Example 2:
 

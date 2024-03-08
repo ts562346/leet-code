@@ -15,7 +15,6 @@ class PalindromeNumberTest {
         PalindromeNumber test = new PalindromeNumber();
         assertTrue(test.isPalindrome(x));
     }
-
     /*
         Example 2:
 
@@ -30,7 +29,6 @@ class PalindromeNumberTest {
         PalindromeNumber test = new PalindromeNumber();
         assertFalse(test.isPalindrome(x));
     }
-
     /*
         Example 3:
 

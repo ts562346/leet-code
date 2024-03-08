@@ -14,7 +14,6 @@ public class RomanToIntegerTest {
         RomanToInteger test = new RomanToInteger();
         assertEquals(3, test.romanToInt(x));
     }
-
     /*
         Example 2:
 
@@ -28,7 +27,6 @@ public class RomanToIntegerTest {
         RomanToInteger test = new RomanToInteger();
         assertEquals(58, test.romanToInt(x));
     }
-
     /*
         Example 3:
 

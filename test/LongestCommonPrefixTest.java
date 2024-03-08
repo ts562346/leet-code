@@ -42,9 +42,8 @@ public class LongestCommonPrefixTest {
         LongestCommonPrefix test = new LongestCommonPrefix();
         assertEquals("", test.longestCommonPrefix(input));
     }
-
     /*
-        Example 3:
+        Example 4:
 
         Input: strs = ["baab","bacb","b","cbc"]
         Output: ""
@@ -56,9 +55,8 @@ public class LongestCommonPrefixTest {
         LongestCommonPrefix test = new LongestCommonPrefix();
         assertEquals("", test.longestCommonPrefix(input));
     }
-
     /*
-        Example 3:
+        Example 5:
 
         Input: strs = ["ac","ac","a","a"]
         Output: ""

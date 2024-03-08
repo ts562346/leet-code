@@ -16,7 +16,6 @@ public class DivideTwoIntegersTest {
         DivideTwoIntegers test = new DivideTwoIntegers();
         assert 3 == test.divide(dividend, divisor);
     }
-
     /*
         Example 2:
 
@@ -31,7 +30,6 @@ public class DivideTwoIntegersTest {
         DivideTwoIntegers test = new DivideTwoIntegers();
         assert -2 == test.divide(dividend, divisor);
     }
-
     /*
         Example 3:
 
@@ -46,7 +44,6 @@ public class DivideTwoIntegersTest {
         DivideTwoIntegers test = new DivideTwoIntegers();
         assertEquals(2147483647, test.divide(dividend, divisor));
     }
-
     /*
         Example 4:
 
@@ -61,7 +58,6 @@ public class DivideTwoIntegersTest {
         DivideTwoIntegers test = new DivideTwoIntegers();
         assertEquals(-2147483648, test.divide(dividend, divisor));
     }
-
     /*
         Example 5:
 
@@ -76,7 +72,6 @@ public class DivideTwoIntegersTest {
         DivideTwoIntegers test = new DivideTwoIntegers();
         assertEquals(-1073741824, test.divide(dividend, divisor));
     }
-
     /*
         Example 6:
 
@@ -91,7 +86,6 @@ public class DivideTwoIntegersTest {
         DivideTwoIntegers test = new DivideTwoIntegers();
         assertEquals(1000000000, test.divide(dividend, divisor));
     }
-
     /*
         Example 7:
 
@@ -106,7 +100,6 @@ public class DivideTwoIntegersTest {
         DivideTwoIntegers test = new DivideTwoIntegers();
         assertEquals(0, test.divide(dividend, divisor));
     }
-
     /*
         Example 8:
 

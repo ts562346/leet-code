@@ -17,7 +17,6 @@ public class RemoveDuplicatesSortedArrayTest {
             assert nums1[i] == expectedNums1[i];
         }
     }
-
     /*
        Example 2:
 

@@ -43,7 +43,6 @@ public class MergeTwoSortedListsTest {
         assertEquals(result, null);
         assertEquals(expected, null);
     }
-
     /*
         Example 2:
         Input: list1 = [], list2 = []
@@ -62,7 +61,6 @@ public class MergeTwoSortedListsTest {
         // Assert that the result is null
         assertNull(result);
     }
-
     /*
         Example 3:
         Input: list1 = [], list2 = [0]

@@ -17,7 +17,6 @@ public class LongestPalindromicStringTest {
         String output = test.longestPalindrome(s);
         assertEquals("bab", output);
     }
-
     /*
         Example 2:
 

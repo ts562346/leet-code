@@ -3,7 +3,6 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 @SuppressWarnings("ALL")
 public class ZigzagConversionTest {
-
     /*
         Example 1:
         Input: s = "PAYPALISHIRING", numRows = 3
@@ -13,7 +12,6 @@ public class ZigzagConversionTest {
     void example1(){
 
     }
-
     /*
         Example 2:
         Input: s = "PAYPALISHIRING", numRows = 4
@@ -28,7 +26,6 @@ public class ZigzagConversionTest {
     void example2(){
 
     }
-
     /*
         Example 3:
         Input: s = "A", numRows = 1

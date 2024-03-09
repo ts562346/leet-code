@@ -39,5 +39,30 @@ public class PlusOneTest {
             PlusOne test = new PlusOne();
             assertArrayEquals(test.plusOne(digits), expected);
     }
+    /*
+        Example 4:
+        Input: digits = [9,9]
+        Output: [1,0,0]
+     */
+    @Test
+    void example4(){
+        int [] digits = {9,9};
+        int [] expected = {1,0,0};
+        PlusOne test = new PlusOne();
+        assertArrayEquals(test.plusOne(digits), expected);
+    }
+    /*
+        Example 5:
+        Input: digits = [8,9,9,9]
+        Output: [9,0,0,0]
+     */
+    @Test
+    void example5(){
+        int [] digits = {8,9,9,9};
+        int [] expected = {9,0,0,0};
+        PlusOne test = new PlusOne();
+        assertArrayEquals(test.plusOne(digits), expected);
+    }
+
 
 }

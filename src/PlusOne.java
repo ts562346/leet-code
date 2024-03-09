@@ -12,21 +12,25 @@ Increment the large integer by one and return the resulting array of digits.
  */
 public class PlusOne {
     public int[] plusOne(int[] digits) {
-        if (digits.length == 1 && digits[digits.length-1] == 9){
-            digits[digits.length-1] += 1;
-            int [] newArray = new int[digits.length+1];
 
-            System.arraycopy(digits, 0, newArray, 0, digits.length);
-
-            newArray[newArray.length-1] = 0;
-
-            return newArray;
-        }
         if(digits[digits.length-1] < 9){
             digits[digits.length-1]++;
             return digits;
         } else {
-            
+            for (int i = digits.length - 1; i >= 0; i--) {
+                if (digits[i] != 9) {
+                    digits[i]++;
+                    return digits;
+                } else {
+                    digits[i] = 0;
+                }
+            }
         }
+
+        int [] newArray = new int[digits.length+1];
+        newArray[0] = 1;
+        System.arraycopy(digits, 0, newArray, 1, digits.length);
+
+        return newArray;
     }
 }

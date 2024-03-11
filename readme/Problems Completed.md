@@ -53,3 +53,5 @@
 ---
 
 [66. Plus One - Easy](../src/PlusOne.java) | [Test](../test/PlusOneTest.java)
+
+[67. Add Binary - Easy](../src/AddBinary.java) | [Test](../test/AddBinaryTest.java)

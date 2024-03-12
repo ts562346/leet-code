@@ -25,4 +25,26 @@ public class AddBinaryTest {
         AddBinary test = new AddBinary();
         assertEquals("10101", test.addBinary(a, b));
     }
+    /*
+        Example 3:
+        Input: a = "1111", b = "1111"
+        Output: "11110"
+     */
+    @Test
+    void example3(){
+        String a = "1111", b = "1111";
+        AddBinary test = new AddBinary();
+        assertEquals("11110", test.addBinary(a, b));
+    }
+    /*
+        Example 4:
+        Input:  a = "100", b = "110010"
+        Output: "110110"
+     */
+    @Test
+    void example4(){
+        String a = "100", b = "110010";
+        AddBinary test = new AddBinary();
+        assertEquals("110110", test.addBinary(a, b));
+    }
 }

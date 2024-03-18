@@ -39,4 +39,26 @@ public class SqrtXTest {
         SqrtX test = new SqrtX();
         assertEquals(3, test.mySqrt(x));
     }
+    /*
+        Example 4:
+        Input: x = 5
+        Output: 2
+     */
+    @Test
+    void example4(){
+        int x = 5;
+        SqrtX test = new SqrtX();
+        assertEquals(2, test.mySqrt(x));
+    }
+    /*
+        Example 5:
+        Input: x = 6
+        Output: 2
+     */
+    @Test
+    void example5(){
+        int x = 6;
+        SqrtX test = new SqrtX();
+        assertEquals(2, test.mySqrt(x));
+    }
 }

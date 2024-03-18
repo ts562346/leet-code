@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /*
 
 69. Sqrt(x) - Easy
@@ -14,31 +12,16 @@ For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
  */
 public class SqrtX {
     public int mySqrt(int x) {
-        ArrayList<Integer> list = primeFactor(x);
 
-        for (int i = 0; i < list.size(); i++){
+        double x0 = x / 2.0;
+        double x1;
 
-        }
-        return i;
+        do {
+            x1 = x0;
+            x0 = (x0 + x / x0) / 2;
+        } while ((x1 - x0) >= 0.1);
+
+        return (int) Math.floor(x0);
     }
 
-    public ArrayList<Integer> primeFactor (int n){
-        ArrayList<Integer> list = new ArrayList<>();
-        while (n % 2 == 0) {
-            list.add(2);
-            n /= 2;
-        }
-
-        for (int i = 3; i <= Math.sqrt(n); i += 2) {
-            while (n % i == 0) {
-                list.add(i);
-                n /= i;
-            }
-        }
-
-        if (n > 2)
-            list.add(n);
-
-        return list;
-    }
 }

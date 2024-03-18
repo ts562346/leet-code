@@ -8,8 +8,6 @@
 
 [3. Longest Substring Without Repeating Characters - Medium](../src/LongestSubstringWORepeating.java) | [Test](../test/LongestSubstringWORepeatingTest.java)
 
----
-
 [4. Median of Two Sorted Arrays - Hard](../src/MedianSortedArray.java) | [Test](../test/MedianSortedArrayTest.java)
 
 [5. Longest Palindromic Substring - Medium](../src/LongestPalindromicString.java) | [Test](../test/LongestPalindromicStringTest.java)
@@ -56,4 +54,6 @@
 
 [67. Add Binary - Easy](../src/AddBinary.java) | [Test](../test/AddBinaryTest.java)
 
-[68. Sqrt(X) - Easy](../src/SqrtX.java) | [Test](../test/SqrtXTest.java)
+---
+
+[69. Sqrt(X) - Easy](../src/SqrtX.java) | [Test](../test/SqrtXTest.java)

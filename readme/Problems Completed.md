@@ -57,3 +57,9 @@
 ---
 
 [69. Sqrt(X) - Easy](../src/SqrtX.java) | [Test](../test/SqrtXTest.java)
+
+[70. Climbing Stairs - Easy](../src/ClimbingStairs.java) | [Test](../test/ClimbingStairsTest.java)
+
+---
+
+[83. Remove Duplicates from Sorted List](../src/RemoveDuplicatesSortedList.java) | [Test](../test/RemoveDuplicatesSortedListTest.java)

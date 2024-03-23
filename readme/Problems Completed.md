@@ -62,4 +62,8 @@
 
 ---
 
-[83. Remove Duplicates from Sorted List](../src/RemoveDuplicatesSortedList.java) | [Test](../test/RemoveDuplicatesSortedListTest.java)
+[83. Remove Duplicates from Sorted List - Easy](../src/RemoveDuplicatesSortedList.java) | [Test](../test/RemoveDuplicatesSortedListTest.java)
+
+---
+
+[88. Merge Sorted Array - Easy](../src/MergeSortedArray.java) | [Test](../test/MergeSortedArrayTest.java)

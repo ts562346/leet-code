@@ -67,3 +67,7 @@
 ---
 
 [88. Merge Sorted Array - Easy](../src/MergeSortedArray.java) | [Test](../test/MergeSortedArrayTest.java)
+
+---
+
+[94. Binary Tree Inorder Traversal - Easy](../src/BinaryTreeInorderTraversal.java) | [Test](../test/BinaryTreeInorderTraversalTest.java)

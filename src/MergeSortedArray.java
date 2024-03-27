@@ -17,17 +17,18 @@ are set to 0 and should be ignored. nums2 has a length of n.
  */
 
 public class MergeSortedArray {
-    public void merge(int[] nums1, int m, int[] nums2, int n) {
-        if(m != 0 && n != 0) {
-            if (nums1.length - n >= 0)
-                System.arraycopy(nums2, n - m, nums1, n, nums1.length - n);
-            Arrays.sort(nums1);
-        } if(m == 0){
-            System.arraycopy(nums2, 0, nums1, 0, n);
-        }
-    }
 
-    public void gpt(int[] nums1, int m, int[] nums2, int n) {
+//    public void merge(int[] nums1, int m, int[] nums2, int n) {
+//        if(m != 0 && n != 0) {
+//            if (nums1.length - n >= 0)
+//                System.arraycopy(nums2, n - m, nums1, n, nums1.length - n);
+//            Arrays.sort(nums1);
+//        } if(m == 0){
+//            System.arraycopy(nums2, 0, nums1, 0, n);
+//        }
+//    }
+
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1; // Index of last element in nums1
         int j = n - 1; // Index of last element in nums2
         int k = m + n - 1; // Index of last element in merged nums1

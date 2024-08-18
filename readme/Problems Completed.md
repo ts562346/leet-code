@@ -71,3 +71,9 @@
 ---
 
 [94. Binary Tree Inorder Traversal - Easy](../src/BinaryTreeInorderTraversal.java) | [Test](../test/BinaryTreeInorderTraversalTest.java)
+
+---
+
+[100. Same Tree - Easy](../src/SameTree.java) | [Test](../test/SameTreeTest.java)
+
+[101. Symmetric Tree - Easy](../src/SymmetricTree.java) | [Test](../test/SymmetricTreeTest.java)

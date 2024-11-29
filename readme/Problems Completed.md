@@ -77,3 +77,7 @@
 [100. Same Tree - Easy](../src/SameTree.java) | [Test](../test/SameTreeTest.java)
 
 [101. Symmetric Tree - Easy](../src/SymmetricTree.java) | [Test](../test/SymmetricTreeTest.java)
+
+---
+
+[104. Maximum Depth of Binary Tree - Easy](../src/MaximumDepthBinaryTree.java) | [Test](../test/MaximumDepthBinaryTreeTest.java)
